@@ -14,11 +14,17 @@ vehicles = [
   'motorcycle', 'motorcycle', 'car', 'truck'
 ]
 
-
 def count_occurrences(array)
-  count = 0
-  array.each { |i| count += 1}
-  array.uniq.each { |element| puts "#{element} => #{count}" }
-end
+   result = {}
+   array.uniq.each do |element|
+    result[element] = array.count(element)
+   end
+
+   result.each do |k, v|
+    puts "#{k} => #{v}"
+   end
+  end
+
 
 count_occurrences(vehicles)
+
