@@ -3,4 +3,5 @@ def caps(string)
     
 end
 
-puts caps("photosynthesis")
+puts caps("pants")
+puts caps("photsynthesis")

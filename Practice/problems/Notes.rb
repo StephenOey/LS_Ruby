@@ -49,7 +49,6 @@ loop do
   puts '>> Do you want me to print something? (y/n)'
   choice = gets.chomp.downcase
   break if %w(y n).include?(choice) # %w(y n) is a short hand way of making an array of strings without "" or ,. so this is array would look like ["y", "n"].
-  # .include? only works on arrays. 
   puts '>> Invalid input! Please enter y or n'
 end
 puts 'something' if choice == 'y'
